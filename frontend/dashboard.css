@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  font-family: 'Roboto Slab', serif;
+  background-color: #ffffff;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px);
+  background-size: 28px 28px; 
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  min-height: 100vh;
+  padding-top: 0; 
+}
+
+.wrapper {
+  max-width: 820px;
+  padding: 20px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #111;
+  text-align: center;
+}
+
+h1 .alt {
+  color: #31A533;
+  font-weight: 700;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 24px;
+  color: #444;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+input[type="text"] {
+  flex: 1 1 320px;
+  padding: 12px 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+  max-width: 400px;
+}
+
+button {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #31A533;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #278429;
+}
+
+.notice {
+  margin: 12px 0;
+  color: #555;
+  min-height: 20px;
+  text-align: center;
+}
+
+.robots-link {
+  text-align: left;
+  margin: 8px 0 20px 154px; 
+}
+.robots-link a {
+  font-size: 15px;
+  color: #0066ff;
+  text-decoration: none;
+}
+.robots-link a:hover {
+  text-decoration: underline;
+}
+
+.report-container {
+  margin-top: 30px;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.section-box {
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+.verdict-box {
+  background-color: #ed7676; 
+}
+
+.explanation-box {
+  background-color: #ddeaa0;
+}
+
+.recommendations-box {
+  background-color: #6e74d0;
+}
+
+.section-box strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 17px;
+  color: #222;
+}
+
+.report-container ul {
+  list-style-type: disc;
+  margin-left: 22px;
+  margin-bottom: 20px;
+}
+
+.report-container li {
+  margin-bottom: 6px;
+}
+
+.logo-text {
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  color: #333;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: #000;
+}
+
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+body.dark-theme h1, 
+body.dark-theme p, 
+body.dark-theme input, 
+body.dark-theme .notice,
+body.dark-theme .section-box strong,
+body.dark-theme .theme-toggle {
+  color: #e0e0e0;
+}
+
+body.dark-theme h1 .alt {
+  color: #90EE90; /* A lighter green for dark theme */
+}
+
+body.dark-theme input[type="text"] {
+  background: #333;
+  border-color: #555;
+  color: #eee;
+}
+
+body.dark-theme button {
+  background-color: #4CAF50; /* Adjust button color for dark theme */
+}
+
+body.dark-theme button:hover {
+  background-color: #45A049;
+}
+
+body.dark-theme .section-box {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-theme .verdict-box {
+  background-color: #440000; /* Darker red */
+}
+
+body.dark-theme .explanation-box {
+  background-color: #333300; /* Darker yellow/green */
+}
+
+body.dark-theme .recommendations-box {
+  background-color: #000044; /* Darker blue */
+}

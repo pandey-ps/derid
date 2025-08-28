@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+autogen
+httpx
+beautifulsoup4
+python-dotenv
+google-generativeai
