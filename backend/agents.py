@@ -51,7 +51,7 @@ def autogen_initiate_chat(agent_a: str, agent_b: str, url: str) -> dict:
 
 
 genai.configure(api_key=GEMINI_API_KEY)
-GEMINI_MODEL_NAME = "gemini-1.5-flash"
+GEMINI_MODEL_NAME = "gemini-2.5-flash"
 
 
 def gemini_generate(prompt: str) -> str:
