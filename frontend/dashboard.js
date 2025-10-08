@@ -105,7 +105,7 @@ async function checkCrawlability() {
     notice.textContent = ""; 
 
   } catch (err) {
-    notice.innerHTML = `<span class="badge err">Network</span> The backend is currently waking up. Please try again in a second or two.`;
+    notice.innerHTML = `<span class="badge err"></span> The backend is currently waking up. Please try again in a minute, if you are on a mobile device the request will be dropped.`;
   } finally {
     loadingIndicator.style.display = 'none';
   }
